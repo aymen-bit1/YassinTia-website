@@ -1,6 +1,7 @@
 body {
     background-color: #2c2010;
-      font-family: "Tajawal", sans-serif;
+    font-family: "Tajawal", sans-serif;
+    margin: 0;
 }
 nav{
     display: flex;
@@ -13,6 +14,7 @@ nav ul{
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-left: 20px;
 }
 nav a{
     text-decoration: none;
@@ -23,6 +25,7 @@ nav a{
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-right: 20px;
 }
 .logo h1{
     margin: 0;
@@ -42,9 +45,16 @@ nav a:hover{
 }
 #home h1{
     color: #dea822;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(222, 168, 34, 0.4);
 }
 #home p{
     color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 30px;
 }
 #home a{
     text-decoration: none;
@@ -53,10 +63,12 @@ nav a:hover{
     padding: 12px 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(222, 168, 34, 0.4);
 }
 #home a:hover{
     background-color: #f0b530;
     transform: translateY(-5px);
+    box-shadow: 0 2px 20px rgba(197, 146, 16, 0.5);
 }
 #social{
     display: flex;
@@ -80,14 +92,17 @@ nav a:hover{
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: transform 0.4s ease;
+}
+#social a:hover{
+    transform: scale(1.15);
+    color: #f0b530;
 }
 #about {
     text-align: center;
     padding: 40px 15px;
 }
 #about p {
-    max-width: 400px;
-    margin: 0 auto; 
     color: #ffffff;  
 }
 .logo img{
@@ -98,7 +113,64 @@ nav a:hover{
 #about h2{
     color: #f0b530;
 }
-.logo{
-    display: flex;
-    
+#about h3{
+    color: #dea822; 
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #3a2a14;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.58);
+    border-color: #f0b530;
+}
+.card i{
+    font-size: 1.6rem;
+    color: #dea822;
+    margin-bottom: 5px;
+}
+footer{
+    background-color: #3a2a14;
+    padding: 30px 25px;
+    border-top: 2px solid #dea822;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
+footer a:hover{
+    color: #dea822;
+    transform: translateY(-5px);
+}
+footer a{
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1.5rem;
+    }
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    #home {
+        padding: 30px 15px;
+    }
+    #home h1 {
+        font-size: 1.6rem;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    #social {
+        flex-direction: column;
+        align-items: center;
+    }
 }
