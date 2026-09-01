@@ -1,0 +1,104 @@
+body {
+    background-color: #2c2010;
+      font-family: "Tajawal", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    transition: all 0.4s ease;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo h1{
+    margin: 0;
+    color: #f0b530;
+    white-space: nowrap;
+}
+nav a:hover{
+    color: #dea822;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    min-height: 60vh;
+}
+#home h1{
+    color: #dea822;
+}
+#home p{
+    color: #ffffff;
+}
+#home a{
+    text-decoration: none;
+    background-color: #dea822;
+    color: #2c2010;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#home a:hover{
+    background-color: #f0b530;
+    transform: translateY(-5px);
+}
+#social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 15px;
+}
+#social .fa-youtube{
+    color: rgb(240, 26, 26);
+}
+#social .fa-discord{
+    color: #3258e1;
+}
+#social .fa-instagram{
+    color: rgb(242, 61, 91);
+}
+#social a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+#about {
+    text-align: center;
+    padding: 40px 15px;
+}
+#about p {
+    max-width: 400px;
+    margin: 0 auto; 
+    color: #ffffff;  
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#about h2{
+    color: #f0b530;
+}
+.logo{
+    display: flex;
+    
+}
