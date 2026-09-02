@@ -156,24 +156,78 @@ footer a{
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
     nav ul {
-        gap: 1.5rem;
+        gap: 0.8rem; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        padding: 0;
     }
+
+    nav ul li a {
+        font-size: 0.9rem; 
+    }
+
     .logo h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        text-align: center;
     }
+
     #home {
-        padding: 30px 15px;
+        padding: 40px 15px;
+        text-align: center;
     }
+
     #home h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem; 
+        line-height: 1.4;
     }
+
+    #home p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .btn, #home button, #home a.btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
     .cards {
         grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px 15px;
     }
+
+    .card {
+        padding: 20px 15px;  
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
     #social {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    #social a {
+        font-size: 0.9rem;
     }
 }
 
