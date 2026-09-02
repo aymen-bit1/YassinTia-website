@@ -176,3 +176,7 @@ footer a{
         align-items: center;
     }
 }
+
+body::selection{
+    background-color: rgb(74, 132, 182);
+}
