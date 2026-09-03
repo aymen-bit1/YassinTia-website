@@ -215,6 +215,14 @@ footer a{
         align-items: center !important;
         gap: 15px !important;
     }
+    nav .logo{
+        display: block;
+        position: center;
+        transform: translateX(8px);
+    }
+    nav img{
+        transform: translateX(-36.8px);
+    }
 }
 
 body::selection{
